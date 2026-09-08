@@ -170,11 +170,11 @@ function Index() {
                 <p className="mt-4 max-w-lg text-lg text-primary-foreground/90 sm:text-xl">
                   Expert care, close to home. Trusted medical services in the heart of JBR, Dubai.
                 </p>
-                <div className="mt-8 flex flex-wrap gap-3">
+                <div className="mt-8 flex w-full flex-wrap gap-3">
                   <Button
                     asChild
                     size="lg"
-                    className="bg-white text-primary hover:bg-white/90"
+                    className="w-full bg-white text-primary hover:bg-white/90 sm:w-auto"
                   >
                     <a href="tel:+971508191687">Book an appointment</a>
                   </Button>
@@ -221,7 +221,7 @@ function Index() {
                 return (
                   <Card
                     key={specialty.title}
-                    className="group transition-shadow hover:shadow-md"
+                    className="group h-full transition-all hover:-translate-y-1 hover:shadow-lg"
                   >
                     <CardHeader>
                       <div className="mb-4 grid h-12 w-12 place-items-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
