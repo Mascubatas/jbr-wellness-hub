@@ -51,6 +51,7 @@ export const Route = createFileRoute("/")({
 });
 
 const navLinks = [
+  { label: "Home", href: "#home" },
   { label: "Specialties", href: "#specialties" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
@@ -107,7 +108,11 @@ function Index() {
                 {link.label}
               </a>
             ))}
-            <Button asChild size="sm">
+            <Button
+              asChild
+              size="sm"
+              className="bg-cta text-cta-foreground hover:bg-cta/90"
+            >
               <a href="tel:+971508191687">Book an appointment</a>
             </Button>
           </nav>
@@ -138,7 +143,11 @@ function Index() {
                   {link.label}
                 </a>
               ))}
-              <Button asChild className="w-full" onClick={() => setMobileMenuOpen(false)}>
+              <Button
+                asChild
+                className="w-full bg-cta text-cta-foreground hover:bg-cta/90"
+                onClick={() => setMobileMenuOpen(false)}
+              >
                 <a href="tel:+971508191687">Book an appointment</a>
               </Button>
             </nav>
@@ -148,7 +157,7 @@ function Index() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="hero-gradient relative overflow-hidden">
+        <section id="home" className="hero-gradient relative overflow-hidden">
           <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
               <div className="flex flex-col items-start text-primary-foreground">
